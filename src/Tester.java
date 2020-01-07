@@ -40,7 +40,7 @@ public class Tester {
                 System.out.println();
             }
 
-         */
+
 
         //exercise 4:
 
@@ -64,8 +64,38 @@ public class Tester {
         System.out.println("Min value provided: " + min);
         System.out.println("Max value provided: " + max);
 
+ */
+        Scanner scan = new Scanner(System.in);
+        int startHour, startMinute, durHour, durMinute, endHour, endMinute;
+        System.out.println("Start Hour:");
+        startHour = scan.nextInt();
+        System.out.println("Start Minute:");
+        startMinute = scan.nextInt();
 
+        if(startHour>=24 || startMinute>=60){
+            System.out.println("Invalid Input!");
+        } else {
+
+            System.out.println("Duration Hour:");
+            durHour = scan.nextInt();
+            System.out.println("Duration Minute:");
+            durMinute = scan.nextInt();
+
+            if(durMinute>=60){
+                System.out.println("Invalid Input!");
+            } else {
+                endHour = (startHour + durHour) % 24;
+
+                if (startMinute+durMinute<60) {
+                    endMinute = startMinute + durMinute;
+                } else {
+                    endMinute = startMinute + durMinute - 60;
+                    endHour++;
+                }
+                System.out.println("End hour:" + endHour + ":" + endMinute);
+            }
         }
+    }
 
 
 
