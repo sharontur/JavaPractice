@@ -1,8 +1,9 @@
+import java.util.Random;
 import java.util.Scanner;
 public class Tester {
 
-    public static void main(String[] args){
-        /*
+    public static void main(String[] args) {
+       /*
         int n1, n2, n3;
 
         //exercise 1:
@@ -64,7 +65,7 @@ public class Tester {
         System.out.println("Min value provided: " + min);
         System.out.println("Max value provided: " + max);
 
- */
+
         Scanner scan = new Scanner(System.in);
         int startHour, startMinute, durHour, durMinute, endHour, endMinute;
         System.out.println("Start Hour:");
@@ -95,11 +96,58 @@ public class Tester {
                 System.out.println("End hour:" + endHour + ":" + endMinute);
             }
         }
-    }
+
+        Scanner scan = new Scanner(System.in);
+        Random rand = new Random();
+        int randomNum = rand.nextInt(99) + 1;
+
+        int n;
+        int count = 0;
+        do {
+            System.out.println("Please Guess a number: ");
+            n = scan.nextInt();
+            count++;
+            if (n < randomNum){
+                System.out.println("The value is larger");
+            }
+            if (n> randomNum){
+                System.out.println("The value is smaller");
+            }
+            if (n == randomNum){
+                System.out.println("YAY you did it!");
+                break;
+            } if (count==7){
+                System.out.println("Failed to find number!");
+                break;
+            }
+        } while (n != randomNum && count<=7);
+
+        }
+
+        int n = 0;
+
+        for (int count = 0; count <= 7 || n == randomNum; count++) {
+            System.out.println("Please Guess a number: ");
+            n = scan.nextInt();
+            if (count==7){
+                System.out.println("Failed to find number!");
+                break;
+            }
+            if (n < randomNum) {
+                System.out.println("The value is larger");
+            }
+            if (n > randomNum) {
+                System.out.println("The value is smaller");
+            }
+            if (n == randomNum) {
+                System.out.println("YAY you did it!");
+                break;
+            }
+*/
+            }
+
+        }
 
 
-
-
-}
 
 
