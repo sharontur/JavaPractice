@@ -143,7 +143,27 @@ public class Tester {
                 System.out.println("YAY you did it!");
                 break;
             }
+
+       //exercise 7:
+            int min = 1, max = 100, middle;
+            Scanner scan = new Scanner(System.in);
+            String answer;
+            for(int i=0;i<7;i++){
+                middle = (min + max)/2;
+                System.out.println("computer chooses: " + middle);
+                answer = scan.nextLine();
+                if (answer.contains("larger")){
+                    min = middle;
+                } else if(answer.contains("smaller")){
+                    max = middle;
+                } else if(answer.contains("ci")){
+                    System.out.println("computer wins");
+                    break;
+                }
+
+            }
 */
+
             }
 
         }
