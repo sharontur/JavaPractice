@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+/*
 public class Tester {
 
     public static void main(String[] args) {
@@ -163,8 +164,31 @@ public class Tester {
 
             }
 */
+        public class Tester
+        {
+            public static void main(String[] args)
+            {
+//                Unknown a1 = new Unknown(1, 4);
+//                Unknown a2 = new Unknown();
+//                Unknown a3 = new Unknown(3, 8.9);
+//
+//                int x = a1.get1();
+//                int y = a3.get1();
+//                if(a3.f(y, x))
+//                    System.out.println("OK");
+//                else
+//                    System.out.println("Wrong");
+
+            Address a1 = new Address("Jerusalem", "Herzel", 34);
+            System.out.println(a1.toString());
+
 
             }
+
+
+
+
+
 
         }
 

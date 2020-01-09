@@ -46,7 +46,10 @@ public class Car
 
     public void drive(int distance)
     {
-        km += distance;
+        if(distance>=0){
+            km += distance;
+        }
+
     }
 
     public String toString()
@@ -54,4 +57,17 @@ public class Car
         return "Car num: " + carNum + ", km: " + km +
                 ", belongs to " + owner;
     }
+
+    public static void main(String[] args){
+        Car car1 = new Car(112, "Sharon");
+        Car car2 = new Car();
+
+
+        car2.setKm(-400);
+        car1.drive(-400);
+        System.out.println(car1 + " and " + car2);
+
+
+    }
+
 }
