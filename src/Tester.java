@@ -1,7 +1,9 @@
 import java.util.Random;
 import java.util.Scanner;
-/*
+
 public class Tester {
+
+
 
     public static void main(String[] args) {
        /*
@@ -163,7 +165,7 @@ public class Tester {
                 }
 
             }
-*/
+
         public class Tester
         {
             public static void main(String[] args)
@@ -182,15 +184,52 @@ public class Tester {
             Address a1 = new Address("Jerusalem", "Herzel", 34);
             System.out.println(a1.toString());
 
+        int age;
+        double productPrice;
+        int day;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter age");
+        age = scan.nextInt();
+        System.out.println("Enter Price");
+        productPrice = scan.nextInt();
+        System.out.println("Enter day number");
+        day = scan.nextInt();
 
-            }
+       if (age >18){
+           System.out.println("yes age is above 18");
+       }
+       if (productPrice <100){
+           System.out.println("yes price is less than 100");
+       }
+       if (day == 2){
+           System.out.println("yes today is monday");
+       }
+       if (productPrice>0){
+           System.out.println("price legal");
+       }
+       if (day % 2 == 0){
+           System.out.println("the day is even");
+       }
+       if (age > 18 && age <65){
+           System.out.println("Legal age");
+       }
 
+       int salary, age;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter age");
+        age = scan.nextInt();
+        System.out.println("enter salary");
+        salary = scan.nextInt();
 
-
-
-
-
+        if (age>18){
+            salary *= 0.95;
         }
+        System.out.println(salary);
+*/
+    Wizard wizard1 = new Wizard("Ron", new Wand(23, "phoenix"));
+    wizard1.castASpell();
+    }
+}
 
 
 
